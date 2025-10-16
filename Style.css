@@ -1,0 +1,181 @@
+/* ---------- VARIABLES ---------- */
+:root {
+  --primary: #0f4c5c;
+  --accent: #1d7a85;
+  --bg-light: #f5f7fa;
+  --white: #ffffff;
+  --gray: #444;
+  --txt: #0a0a0a;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --radius: 8px;
+  --font-main: 'Inter', sans-serif;
+}
+
+/* ---------- RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-light);
+  color: var(--txt);
+  line-height: 1.6;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  background: var(--txt);
+  color: var(--white);
+  padding: 2rem 0;
+  text-align: center;
+  border-bottom: 5px solid var(--accent);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+/* ---------- SECCIONES ---------- */
+section {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+  border-left: 5px solid var(--accent);
+  padding-left: 10px;
+}
+
+/* ---------- HABILIDADES ---------- */
+.skills {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.skills button {
+  background-color: var(--accent);
+  color: var(--white);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.skills button:hover {
+  background-color: var(--primary);
+}
+
+/* ---------- PROYECTOS ---------- */
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card {
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.card__link {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+
+.card__link:hover {
+  text-decoration: underline;
+}
+
+.card__desc {
+  font-size: 1rem;
+  color: var(--gray);
+}
+
+/* ---------- CONTACTO ---------- */
+#contactos form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#contactos input,
+#contactos button {
+  font-size: 1.1rem;
+  padding: 1rem;
+  border-radius: var(--radius);
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+#contactos button {
+  background: var(--accent);
+  color: white;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#contactos button:hover {
+  background: var(--primary);
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: var(--txt);
+  color: var(--white);
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
