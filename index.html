@@ -1,96 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8"> <!--para caracteres de escritura de diferentes idiomas-->
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--meta name, para que sea del tamaño del dispositivo( auto ajustable)-->
     <title>Portafolio de Rebeca</title>
-    <!--Para enlazar con la clase style-->
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <!-- Aqui va el encabezado visisble de la pagina-->
-         <h1 style="text-align: center;">Rebeca campos</h1>
-         <!--text-alingn: center = titulo centrado-->
-       <nav>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <h1 class="logo">Rebeca Campos</h1>
+
+        <nav class="nav">
             <ul>
                 <li><a href="#Inicio">Inicio</a></li>
                 <li><a href="#Habilidades">Habilidades</a></li>
                 <li><a href="#Proyectos">Proyectos</a></li>
-                <li><a href="#Testimonios">Testimonios</a></li> 
-                <li><a href="#Contactos">Contactos</a></li>  
+                <li><a href="#Testimonios">Testimonios</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
             </ul>
-         </nav>
+        </nav>
     </header>
 
-    <section id="Inicio">
-        <h2>Acerca de Mi </h2>
-        <p>Soy una estudiante de Ingienería en sistema de la Uaca, y me apasiona crear.</p>
-        
+    <!-- ===== INICIO ===== -->
+    <section id="Inicio" class="section inicio">
+        <h2>Acerca de mí</h2>
+        <p>Soy estudiante de Ingeniería en Sistemas en la UACA. Me apasiona crear soluciones, desarrollar software y aprender nuevas tecnologías.</p>
     </section>
 
-    <section id="Habilidades">
+    <!-- ===== HABILIDADES ===== -->
+    <section id="Habilidades" class="section">
         <h2>Habilidades</h2>
         <div class="skills">
-            <button>JAVA</button>
-            <button>C#</button>
-            <button>Python</button>
+            <span class="skill">JAVA</span>
+            <span class="skill">C#</span>
+            <span class="skill">Python</span>
+            <span class="skill">HTML/CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">SQL Server</span>
         </div>
     </section>
-    
-    <section id="proyectos">
-        <div class="container">
-            <h2>Proyectos</h2>
-            <div class="projects">
 
-                <article class="card">
-                     <a class="card__link" href="https://camposrebe239-stack.github.io/Directorio/" target="_blank" rel="noopener">Directorio de usuarios </a>
-                    <i class="card__desc">CRUD completo con validaciones.</i>
-                </article>
+    <!-- ===== PROYECTOS ===== -->
+    <section id="Proyectos" class="section">
+        <h2>Proyectos</h2>
 
-                <article class="card">
-                    <a class="card__link" href="https://camposrebe239-stack.github.io/Cajero-Automatico-/" target="_blank" rel="noopener">Cajero Automático </a>
-                    <i class="card__desc">Simulación de retiros, depósitos y consultas de saldo.</i>
-                </article>
-                <article class="card">
-                    <a class="card__link" href="https://camposrebe239-stack.github.io/Tienda-Virtual//" target="_blank" rel="noopener">Tienda Virtual</a>
-                    <i class="card__desc">Mnejo de inventarios.</i>
-                </article>
+        <div class="projects">
 
+            <article class="card">
+                <a class="card__link" href="https://camposrebe239-stack.github.io/Directorio/" target="_blank">Directorio de Usuarios</a>
+                <p class="card__desc">CRUD completo con validaciones.</p>
+            </article>
 
-            </div>
+            <article class="card">
+                <a class="card__link" href="https://camposrebe239-stack.github.io/Cajero-Automatico-/" target="_blank">Cajero Automático</a>
+                <p class="card__desc">Simulación de retiros y consultas bancarias.</p>
+            </article>
+
+            <article class="card">
+                <a class="card__link" href="https://camposrebe239-stack.github.io/Tienda-Virtual/" target="_blank">Tienda Virtual</a>
+                <p class="card__desc">Administración de inventario y ventas.</p>
+            </article>
+
+            <article class="card">
+                <a class="card__link" href="https://camposrebe239-stack.github.io/Programacion-5/" target="_blank">Guía de Programación</a>
+                <p class="card__desc">Hipervínculos, formularios, eventos y más.</p>
+            </article>
+
+            <article class="card">
+                <a class="card__link" href="https://camposrebe239-stack.github.io/Calculadora/" target="_blank">Calculadora Científica</a>
+                <p class="card__desc">Incluye trigonometría avanzada.</p>
+            </article>
+
+            <article class="card">
+                <a class="card__link" href="https://camposrebe239-stack.github.io/Parqueo/" target="_blank">Sistema de Parqueo</a>
+                <p class="card__desc">Simulación de registro, tickets y gestión.</p>
+            </article>
+
         </div>
     </section>
-        
-    </section>
 
-    <section id="Testimonios">
+    <!-- ===== TESTIMONIOS ===== -->
+    <section id="Testimonios" class="section testimonios">
         <h2>Testimonios</h2>
-        <form>
-        <p>"Es una persona responsable y puntual."</p>
-        <p>"Ella es muy servicial y amable."</p>
-    </section>
-    
-    <section id="contactos">
-    <h2>Contacto</h2>
-    <form>
-        <input type="text" placeholder="Tu nombre" required>
-        <input type="email" placeholder="Tu correo electrónico" required>
-        <button type="submit">Enviar mensaje</button>
-    </form>
-    </section>
-    
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container footer__content">
-            <p>© <span id="year"></span> Rebeca Campos</p>
-            <a class="footer__link" href="https://github.com/camposrebe239-stack" target="_blank" rel="noopener">GitHub</a>
+
+        <div class="testimonial-card">
+            <p>"Es una persona responsable y puntual."</p>
         </div>
+        <div class="testimonial-card">
+            <p>"Ella es muy servicial, amable y dedicada."</p>
+        </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section id="Contacto" class="section contacto">
+        <h2>Contacto</h2>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu correo electrónico" required>
+            <textarea placeholder="Escribe tu mensaje..." required></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <p>© <span id="year"></span> Rebeca Campos</p>
+        <a href="https://github.com/camposrebe239-stack" target="_blank">GitHub</a>
     </footer>
 
     <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById("year").textContent = new Date().getFullYear();
     </script>
+
 </body>
 </html>
